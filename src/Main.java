@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 //        Greeter currentGreeter;
-        PolitePerson wellWisher = new PolitePerson();
+//        PolitePerson wellWisher = new PolitePerson();
+        GreetingService greeting = new GreetingService();
+
+        greeting.sendGreeting("Unami");
 
 //        wellWisher = new PolitePerson();
 //        String helloMessage = wellWisher.greet("Ncedo");
@@ -9,9 +12,9 @@ public class Main {
 //        System.out.println(helloMessage);
 //        System.out.println(goodbyeMessage);
 
-        PolitePerson greetUs = wellWisher;
-        System.out.println(greetUs.sayGoodbye("Amile"));
-        System.out.println(greetUs.greet("Ncedo"));
+//        PolitePerson greetUs = wellWisher;
+//        System.out.println(greetUs.sayGoodbye("Amile"));
+//        System.out.println(greetUs.greet("Ncedo"));
 
 //        currentGreeter = new CasualGreeter();
 //        String helloGuest1 = currentGreeter.greet("Ncedo");
