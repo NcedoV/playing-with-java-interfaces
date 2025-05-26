@@ -1,3 +1,3 @@
-public interface Shape {
+public interface Greeter {
     String greet(String name);
 }
