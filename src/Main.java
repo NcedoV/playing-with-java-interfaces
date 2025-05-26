@@ -1,12 +1,19 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        var casualGreeting = new CasualGreeter();
-        var formalGreeting = new FormalGreeter();
+        Greeter currentGreeter;
 
-        String helloGuest1 = casualGreeting.greet("Ncedo");
-        String helloGuest2 = formalGreeting.greet("Simon");
-
+        currentGreeter = new CasualGreeter();
+        String helloGuest1 = currentGreeter.greet("Ncedo");
         System.out.println(helloGuest1);
+
+        currentGreeter = new FormalGreeter();
+        String helloGuest2 = currentGreeter.greet("Simon");
         System.out.println(helloGuest2);
+
+        currentGreeter = new zuluGreeter();
+        String helloGuest3 = currentGreeter.greet("Ncira");
+        System.out.println(helloGuest3);
     }
 }
