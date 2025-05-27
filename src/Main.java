@@ -2,9 +2,17 @@ public class Main {
     public static void main(String[] args) {
 //        Greeter currentGreeter;
 //        PolitePerson wellWisher = new PolitePerson();
-        GreetingService greeting = new GreetingService();
 
-        greeting.sendGreeting("Unami");
+        ZuluGreeter zuluGreeting = new ZuluGreeter();
+
+        GreetingService greetingServer = new GreetingService(zuluGreeting);
+        greetingServer.sendGreeting("Unami");
+
+
+        CasualGreeter casualGreeting = new CasualGreeter();
+
+        GreetingService casualGreetingServer = new GreetingService(casualGreeting);
+        casualGreetingServer.sendGreeting("Simo");
 
 //        wellWisher = new PolitePerson();
 //        String helloMessage = wellWisher.greet("Ncedo");
